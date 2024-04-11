@@ -23,3 +23,6 @@ This project is a responive design from a regular computer, tablet and finally a
 
 ![alt-text](main-page.jpg)
 ![alt text](mobile.jpg)
+
+**Link to site **
+https://mariolop30.github.io/se_project_aroundtheus/
