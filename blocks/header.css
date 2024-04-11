@@ -4,3 +4,19 @@
   border-color: #545454;
   padding-bottom: 41px;
 }
+
+@media screen and(max-width: 320px) {
+  .header {
+    height: 26.63;
+  }
+
+  .header-logo {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .header-bottom-line {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
