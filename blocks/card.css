@@ -40,6 +40,7 @@
   height: 18px;
   border: none;
   color: #000;
+  cursor: pointer;
 }
 
 .card__like-button:hover {
