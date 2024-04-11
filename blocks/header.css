@@ -3,9 +3,10 @@
   border-bottom: 1px solid;
   border-color: #545454;
   padding-bottom: 41px;
+  padding-left: 27px;
 }
 
-@media screen and(max-width: 320px) {
+@media screen and(max-width: 760px) {
   .header {
     height: 26.63;
   }
