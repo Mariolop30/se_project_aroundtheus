@@ -5,10 +5,15 @@
 - Intro
 - Figma
 - Images
+- Grid layouts
+- Media query's
+- Responsive design
+- 6 cards
+- **Intro**
 
-**Intro**
+This project is a responive design from a regular computer, tablet and finally a mobile screen resolution. To achieve this I had to use media query's at resolutions of 110px, 760px, and 480px. I also used woff2 fonts that I had to download into the fonts block. The fonts were than implented into the project by using the @font-face element in the fonts.css tab and then they were imported using the @import in the index.css.
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+- [Video link describing the project](https://drive.google.com/file/d/1LXmyzTCMWHCIrkt8mBzHUciMGFuKKnGH/view?usp=drive_link)
 
 **Figma**
 
@@ -17,8 +22,3 @@ This project is made so all the elements are displayed correctly on popular scre
 **Images**
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
-
-**Video link**
-https://drive.google.com/file/d/1LXmyzTCMWHCIrkt8mBzHUciMGFuKKnGH/view?usp=drive_link
