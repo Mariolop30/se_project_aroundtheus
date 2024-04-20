@@ -10,12 +10,12 @@
   padding: 0 19px;
   align-items: center;
   justify-content: center;
-  /*display: none;*/
+  display: none;
 }
 
-/*.modal_opened {
+.modal_opened {
   display: flex;
-}*/
+}
 
 .modal__container {
   position: relative;
@@ -67,7 +67,7 @@
   font-size: 14px;
   line-height: 17px;
   width: 358px;
-  height: 14px;
+  height: 27px;
 }
 
 .modal__button {
@@ -86,7 +86,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .modal {
     justify-content: center;
     align-items: center;
