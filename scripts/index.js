@@ -6,21 +6,24 @@ const initialCards = [
 
   {
     name: "Lake Louise",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpgttps://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
   },
+
   {
     name: "Bald Mountains",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemitehttps://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
   },
 
   {
     name: "Latemar",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
   },
+
   {
     name: "Vanoise National Park",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
   },
+
   {
     name: "Lago di Braies",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
@@ -40,12 +43,27 @@ const profileDescriptionInput = document.querySelector(
   "#profile-title-description"
 );
 const profileEditForm = profileEditModal.querySelector(".modal__form");
+const cardListEl = document.querySelector(".cards__list");
+const cardTemplate =
+  document.querySelector("#card-template").content.firstElementChild;
 
 /*----------------------------------------------------------------------------*/
 /*                                  Functions                                 */
 /*----------------------------------------------------------------------------*/
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
+}
+
+function getCardElement(cardData) {
+  const cardElement = cardTemplate.cloneNode(true);
+  const cardImageEL = cardElement.querySelector(".card__image");
+  const cardTitleEL = cardElement.querySelector(".card__title");
+  cardTitleEL.textContent = cardData.name;
+  cardImageEL.src = cardData.link;
+  cardImageEL.alt = cardData.name;
+
+  cardTitleEL.textContent = cardData.name;
+  return cardElement;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -70,3 +88,8 @@ profileEditButton.addEventListener("click", () => {
 profileCloseModal.addEventListener("click", closePopup);
 
 profileEditForm.addEventListener("submit", handleProfileEditSumbit);
+
+initialCards.forEach((cardData) => {
+  const cardElement = getCardElement(cardData);
+  cardListEl.append(cardElement);
+});
