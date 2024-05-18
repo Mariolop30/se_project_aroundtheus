@@ -56,7 +56,21 @@
   height: 23px;
 }
 
-.modal__form-input {
+.modal__input_type_name {
+  display: block;
+  margin-bottom: 29px;
+  border: rgb(0, 0, 0, 1);
+  border-bottom: 1px solid;
+  width: 100%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 358px;
+  height: 27px;
+}
+
+.modal__input_type_description {
   display: block;
   margin-bottom: 29px;
   border: rgb(0, 0, 0, 1);
@@ -117,7 +131,13 @@
     margin-bottom: 45px;
   }
 
-  .modal__form-input {
+  .modal__input_type_name {
+    height: 27px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .modal__input_type_description {
     height: 27px;
     margin-bottom: 30px;
     width: 100%;
