@@ -13,11 +13,11 @@
   display: none;
 }
 
-.modal_opened {
+.modal_is-opened {
   display: flex;
 }
 
-.modal__container {
+.modal__content {
   position: relative;
   padding: 36px;
   background-color: #fff;
@@ -111,7 +111,7 @@
     margin: 123px 19px 0;
   }
 
-  .modal__container {
+  .modal__content {
     width: 282px;
     height: 322px;
   }
